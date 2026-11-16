@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1030" />
+    <meta name="description" content="SURGE: Rookie Trials — a seated, hands-only WebXR hero training game." />
+    <title>SURGE: Rookie Trials</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading">SURGE <span>ROOKIE TRIALS</span><small>Preparing the academy...</small></div>
+      <div id="hud" class="hud hidden">
+        <div class="hud-top"><span id="phase-label">ROOKIE TRAINING</span><span id="timer">90</span></div>
+        <div class="meter"><label id="meter-label">FOCUS</label><div class="meter-track"><div id="meter-fill"></div></div></div>
+        <div id="score-label">SCORE <b id="score">0</b></div>
+      </div>
+      <div id="gesture-label">DESKTOP: CLICK = PINCH · HOLD SPACE = OPEN PALM</div>
+      <div id="debug" class="debug">FPS -- · HAND -- · GESTURE --</div>
+      <div id="desktop-help">Mouse to aim · Click to pinch · Space to slow time</div>
+      <div id="screen-overlay" class="overlay">
+        <section class="panel">
+          <p class="eyebrow">ROOKIE HERO ACADEMY</p>
+          <h1 id="panel-title">SURGE</h1>
+          <p id="panel-subtitle" class="subtitle">ROOKIE TRIALS</p>
+          <div id="panel-content"></div>
+          <div id="panel-actions" class="actions"></div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
